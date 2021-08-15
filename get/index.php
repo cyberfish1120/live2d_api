@@ -10,7 +10,7 @@ $modelTextures = new modelTextures();
 $jsonCompatible = new jsonCompatible();
 
 $id = explode('-', $id);
-$modelId = (int)$id[1];
+$modelId = (int)$id[0];
 $modelTexturesId = isset($id[1]) ? (int)$id[1] : 0;
 
 $modelName = $modelList->id_to_name($modelId);
